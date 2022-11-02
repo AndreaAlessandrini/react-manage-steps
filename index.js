@@ -4,8 +4,8 @@ import './style.css';
 
 console.log("Let's start!");
 
-const data = require('./steps.json');
-console.log(data);
+const steps = require('./steps.json');
+console.log(steps);
 
 function Step() {
   // step defines the page to show by the code (of type string)
@@ -13,9 +13,9 @@ function Step() {
 
   console.log(`the actual step ${step}`);
 
-  console.log(`the state ${data.steps}`);
+  console.log(`the state ${steps}`);
 
-  let found = data.steps.find(function (element) {
+  let found = steps.find(function (element) {
     return element.code == step;
   });
 
@@ -32,9 +32,7 @@ function Step() {
   return (
     <div>
       The page content
-      {data.steps[0].title}
-
-      
+      {steps[0].title}
       <button className="item"> Choice 1</button>
       <button className="item"> Choice 2</button>
     </div>
