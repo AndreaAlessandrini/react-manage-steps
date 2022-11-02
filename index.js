@@ -33,6 +33,8 @@ function Step() {
     <div>
       The page content
       {data.steps[0].title}
+
+      
       <button className="item"> Choice 1</button>
       <button className="item"> Choice 2</button>
     </div>
